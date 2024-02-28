@@ -1,6 +1,7 @@
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import PageHeader from '@/components/PageHeader';
+import Subscribe from '@/components/Subscribe';
 import TestimonialList from '@/components/TestimonialList';
 
 const Team = () => {
@@ -12,6 +13,7 @@ const Team = () => {
       </div>
       <main className=''>
         <TestimonialList />
+        <Subscribe />
       </main>
       <Footer />
     </>
