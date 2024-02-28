@@ -5,10 +5,10 @@ import { Button } from '@/components/ui/button';
 import { CiMenuFries, CiMenuBurger } from 'react-icons/ci';
 import { useState } from 'react';
 
-const Header = () => {
+const Header = ({ classes }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <header className='bg-gradient-to-b from-green-200 to-green-200'>
+    <header className={classes}>
       <div className='pt-[15px]'>
         <Wrapper>
           <nav className='flex justify-between items-center md:py-4 relative'>
@@ -50,7 +50,7 @@ const Header = () => {
                   } lg:block w-full lg:w-auto`}
                 >
                   <Link
-                    href='/'
+                    href='/team'
                     className={`${
                       isOpen ? 'block w-full' : ''
                     } md:inline-block p-[10px] font-medium duration-200 hover:text-[#20b15a]`}

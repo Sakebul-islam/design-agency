@@ -12,7 +12,7 @@ const FeaturedProject = () => {
     <div className='bg-[#F0FDF4] pt-[61px] pb-20'>
       <Wrapper>
         <div className='mb-[72px]'>
-          <span className='inline-block text-[#20B15A] text-xl font-medium mb-[15px]'>
+          <span className='inline-block text-[#20B15A] text:md md:text-xl font-medium mb-[15px] uppercase'>
             Featured Project
           </span>
           <h3 className='text-black text-lg lg:text-3xl font-semibold'>

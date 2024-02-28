@@ -30,7 +30,7 @@ const WorkList = () => {
     <section className='py-[65.5px]'>
       <Wrapper>
         <div className='mb-[40px]'>
-          <span className='inline-block text-[#20B15A] text-xl font-medium mb-[15px]'>
+          <span className='inline-block text-[#20B15A] text:md md:text-xl font-medium mb-[15px] uppercase'>
             Work List
           </span>
           <h3 className='text-black text-lg lg:text-3xl font-semibold'>
