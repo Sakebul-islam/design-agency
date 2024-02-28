@@ -16,17 +16,17 @@ const Footer = () => {
               help people understand you better
             </p>
             <div className='flex gap-[15.31px]'>
-              <span className='w-[40px] h-[40px] bg-[#20B15A] rounded-full grid place-content-center'>
-                <FaFacebookF />
+              <span className='w-[40px] h-[40px] bg-[#20B15A] rounded-full grid place-content-center overflow-hidden duration-200 hover:bg-gray-500 cursor-pointer group'>
+                <FaFacebookF className='group-hover:scale-150 duration-200' />
               </span>
-              <span className='w-[40px] h-[40px] bg-[#20B15A] rounded-full grid place-content-center'>
-                <FaTwitter />
+              <span className='w-[40px] h-[40px] bg-[#20B15A] rounded-full grid place-content-center overflow-hidden duration-200 hover:bg-gray-500 cursor-pointer group'>
+                <FaTwitter className='group-hover:scale-150 duration-200' />
               </span>
-              <span className='w-[40px] h-[40px] bg-[#20B15A] rounded-full grid place-content-center'>
-                <FaLinkedinIn />
+              <span className='w-[40px] h-[40px] bg-[#20B15A] rounded-full grid place-content-center overflow-hidden duration-200 hover:bg-gray-500 cursor-pointer group'>
+                <FaLinkedinIn className='group-hover:scale-150 duration-200' />
               </span>
-              <span className='w-[40px] h-[40px] bg-[#20B15A] rounded-full grid place-content-center'>
-                <AiFillInstagram />
+              <span className='w-[40px] h-[40px] bg-[#20B15A] rounded-full grid place-content-center overflow-hidden duration-200 hover:bg-gray-500 cursor-pointer group'>
+                <AiFillInstagram className='group-hover:scale-150 duration-200' />
               </span>
             </div>
           </div>
@@ -34,22 +34,34 @@ const Footer = () => {
             <h5 className='text-xl font-semibold mb-4'>Quick Links</h5>
             <ul className='space-y-[25px]'>
               <li>
-                <Link href='/' className='text-sm font-medium'>
+                <Link
+                  href='/'
+                  className='text-sm font-medium duration-300 hover:underline'
+                >
                   Services
                 </Link>
               </li>
               <li>
-                <Link href='/' className='text-sm font-medium'>
+                <Link
+                  href='/'
+                  className='text-sm font-medium duration-300 hover:underline'
+                >
                   Portfolio
                 </Link>
               </li>
               <li>
-                <Link href='/' className='text-sm font-medium'>
+                <Link
+                  href='/'
+                  className='text-sm font-medium duration-300 hover:underline'
+                >
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href='/' className='text-sm font-medium'>
+                <Link
+                  href='/'
+                  className='text-sm font-medium duration-300 hover:underline'
+                >
                   Contact Us
                 </Link>
               </li>
