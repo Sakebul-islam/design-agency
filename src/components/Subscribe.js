@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 
 const Subscribe = () => {
   return (
-    <div className='pt-[90px] pb-[137px]'>
+    <section className='pt-[90px] pb-[137px]'>
       <div className='max-w-[596px] px-8 mx-auto'>
         <div className='mb-[40px] text-center'>
           <span className='inline-block text-[#20B15A] text:md md:text-xl font-medium mb-[22px] uppercase'>
@@ -29,7 +29,7 @@ const Subscribe = () => {
           </Button>
         </form>
       </div>
-    </div>
+    </section>
   );
 };
 

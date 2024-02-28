@@ -4,9 +4,12 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { CiMenuFries, CiMenuBurger } from 'react-icons/ci';
 import { useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 const Header = ({ classes }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const route = usePathname().replace('/', '');
+
   return (
     <header className={classes}>
       <div className='pt-[15px]'>
@@ -39,7 +42,11 @@ const Header = ({ classes }) => {
                     href='/'
                     className={`${
                       isOpen ? 'block w-full' : ''
-                    } md:inline-block p-[10px] font-medium duration-200 hover:text-[#20b15a]`}
+                    } md:inline-block p-[10px] font-medium duration-200 rounded-sm ${
+                      route === ''
+                        ? 'bg-[#20b15a] text-white hover:text-black'
+                        : 'hover:text-[#20b15a]'
+                    }`}
                   >
                     Home
                   </Link>
@@ -53,7 +60,11 @@ const Header = ({ classes }) => {
                     href='/team'
                     className={`${
                       isOpen ? 'block w-full' : ''
-                    } md:inline-block p-[10px] font-medium duration-200 hover:text-[#20b15a]`}
+                    } md:inline-block p-[10px] font-medium duration-200 rounded-sm ${
+                      route === 'team'
+                        ? 'bg-[#20b15a] text-white hover:text-black'
+                        : 'hover:text-[#20b15a]'
+                    }`}
                   >
                     Team
                   </Link>
@@ -64,10 +75,14 @@ const Header = ({ classes }) => {
                   } lg:block w-full lg:w-auto`}
                 >
                   <Link
-                    href='/'
+                    href='/service'
                     className={`${
                       isOpen ? 'block w-full' : ''
-                    } md:inline-block p-[10px] font-medium duration-200 hover:text-[#20b15a]`}
+                    } md:inline-block p-[10px] font-medium duration-200 rounded-sm ${
+                      route === 'service'
+                        ? 'bg-[#20b15a] text-white hover:text-black'
+                        : 'hover:text-[#20b15a]'
+                    }`}
                   >
                     Service
                   </Link>
@@ -78,10 +93,14 @@ const Header = ({ classes }) => {
                   } lg:block w-full lg:w-auto`}
                 >
                   <Link
-                    href='/'
+                    href='/projects'
                     className={`${
                       isOpen ? 'block w-full' : ''
-                    } md:inline-block p-[10px] font-medium duration-200 hover:text-[#20b15a]`}
+                    } md:inline-block p-[10px] font-medium duration-200 rounded-sm ${
+                      route === 'projects'
+                        ? 'bg-[#20b15a] text-white hover:text-black'
+                        : 'hover:text-[#20b15a]'
+                    }`}
                   >
                     Projects
                   </Link>
@@ -95,7 +114,11 @@ const Header = ({ classes }) => {
                     href='/testimonials'
                     className={`${
                       isOpen ? 'block w-full' : ''
-                    } md:inline-block p-[10px] font-medium duration-200 hover:text-[#20b15a]`}
+                    } md:inline-block p-[10px] font-medium duration-200 rounded-sm ${
+                      route === 'testimonials'
+                        ? 'bg-[#20b15a] text-white hover:text-black'
+                        : 'hover:text-[#20b15a]'
+                    }`}
                   >
                     Testimonials
                   </Link>
