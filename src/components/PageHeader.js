@@ -1,18 +1,13 @@
-'use client';
-
-import { usePathname } from 'next/navigation';
 import Wrapper from '@/components/Wrapper';
 import Link from 'next/link';
 
-const PageHeader = ({ classes }) => {
-  const location = usePathname().replace('/', '');
-
+const PageHeader = ({ classes, header }) => {
   return (
     <div className={`pt-24 pb-20 ${classes}`}>
       <Wrapper>
         <div className=''>
-          <h3 className='text-gray-900 text-[40px] font-semibold leading-[51px] inline-block mb-5'>
-            Team
+          <h3 className='text-gray-900 text-[30px] sm:text-[40px] font-semibold leading-[51px] inline-block mb-5 capitalize'>
+            {header}
           </h3>
           <nav aria-label='Default breadcrumb example' class=''>
             <ol class='flex items-center'>
@@ -43,7 +38,7 @@ const PageHeader = ({ classes }) => {
                   ></path>
                 </svg>
                 <span class='flex items-center text-sm font-medium text-[#20B15A] dark:text-[#20B15A] capitalize'>
-                  {location}
+                  {header}
                 </span>
               </li>
             </ol>

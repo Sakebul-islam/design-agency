@@ -92,7 +92,7 @@ const Header = ({ classes }) => {
                   } lg:block w-full lg:w-auto`}
                 >
                   <Link
-                    href='/'
+                    href='/testimonials'
                     className={`${
                       isOpen ? 'block w-full' : ''
                     } md:inline-block p-[10px] font-medium duration-200 hover:text-[#20b15a]`}

@@ -20,6 +20,7 @@ module.exports = {
       boxShadow: {
         '3xl': '4px 9px 20px 0px rgba(0, 0, 0, 0.07)',
         '4xl': '0px 4.4px 20px -1px rgba(19, 16, 34, 0.05);',
+        '5xl': '0px 4px 30px 0px rgba(0, 0, 0, 0.09);',
       },
       colors: {
         logo: '#F55F1D',

@@ -41,7 +41,7 @@ const teams = [
 
 const Teams = () => {
   return (
-    <section className='py-12 md:py-16 rounded-[20px]'>
+    <section className='py-12 md:py-16'>
       <Wrapper>
         <div className='mb-[40px]'>
           <span className='inline-block text-[#20B15A] text:md md:text-xl font-medium mb-[15px] uppercase'>
