@@ -1,18 +1,18 @@
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import PageHeader from '@/components/PageHeader';
+import Services from '@/components/Services';
 import Subscribe from '@/components/Subscribe';
-import AllProject from '@/components/AllProject';
 
-const Project = () => {
+const Service = () => {
   return (
     <>
       <div className='bg-gradient-to-b from-gray-100 to-[#F8F9FC]'>
         <Header />
-        <PageHeader header='all project' />
+        <PageHeader header='Our Services' />
       </div>
       <main className=''>
-        <AllProject />
+        <Services />
         <Subscribe />
       </main>
       <Footer />
@@ -20,4 +20,4 @@ const Project = () => {
   );
 };
 
-export default Project;
+export default Service;
