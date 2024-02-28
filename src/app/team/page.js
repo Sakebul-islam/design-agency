@@ -10,7 +10,7 @@ const Team = () => {
     <>
       <div className='bg-gradient-to-b from-gray-100 to-[#F8F9FC]'>
         <Header />
-        <PageHeader />
+        <PageHeader header='team' />
       </div>
       <main className=''>
         <AllServices />
