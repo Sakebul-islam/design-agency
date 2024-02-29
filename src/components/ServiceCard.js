@@ -16,50 +16,44 @@ const ServiceCard = ({ service }) => {
           answers and fields customer inquiries
         </p>
       </div>
-      <div className=''>
-        <div className='flex flex-row gap-[33px]'>
-          <figure className='mb-7 overflow-hidden rounded-[20px]'>
-            <Image
-              src={service?.photoURL[0]?.src}
-              width={service?.photoURL[0]?.width}
-              height={service?.photoURL[0]?.height}
-              alt='hero-image-1'
-              layout='responsive'
-              className={`hover:scale-105 duration-300 rounded-[20px] cursor-pointer`}
-            />
-          </figure>
-          <figure className='mb-7 overflow-hidden rounded-[20px]'>
-            <Image
-              src={service?.photoURL[1]?.src}
-              width={service?.photoURL[1]?.width}
-              height={service?.photoURL[1]?.height}
-              alt='hero-image-1'
-              layout='responsive'
-              className={`hover:scale-105 duration-300 rounded-[20px] cursor-pointer`}
-            />
-          </figure>
+      <div className='flex flex-col gap-5'>
+        <div className='flex flex-col md:flex-row gap-[33px] justify-between'>
+          <Image
+            src={service?.photoURL[0]?.src}
+            width={service?.photoURL[0]?.width}
+            height={service?.photoURL[0]?.height}
+            alt='hero-image-1'
+            layout='fixed'
+            className={`hover:scale-105 duration-300 rounded-[20px] cursor-pointer !w-full`}
+          />
+
+          <Image
+            src={service?.photoURL[1]?.src}
+            width={service?.photoURL[1]?.width}
+            height={service?.photoURL[1]?.height}
+            alt='hero-image-1'
+            layout='fixed'
+            className={`hover:scale-105 duration-300 rounded-[20px] cursor-pointer !w-full`}
+          />
         </div>
-        <div className='flex flex-row'>
-          <figure className='mb-7 overflow-hidden rounded-[20px]'>
-            <Image
-              src={service?.photoURL[2]?.src}
-              width={service?.photoURL[2]?.width}
-              height={service?.photoURL[2]?.height}
-              alt='hero-image-1'
-              layout='responsive'
-              className={`hover:scale-105 duration-300 rounded-[20px] cursor-pointer`}
-            />
-          </figure>
-          <figure className='mb-7 overflow-hidden rounded-[20px]'>
-            <Image
-              src={service?.photoURL[3]?.src}
-              width={service?.photoURL[3]?.width}
-              height={service?.photoURL[3]?.height}
-              alt='hero-image-1'
-              layout='responsive'
-              className={`hover:scale-105 duration-300 rounded-[20px] cursor-pointer`}
-            />
-          </figure>
+        <div className='flex flex-col md:flex-row gap-[33px] justify-between'>
+          <Image
+            src={service?.photoURL[2]?.src}
+            width={service?.photoURL[2]?.width}
+            height={service?.photoURL[2]?.height}
+            alt='hero-image-1'
+            layout='fixed'
+            className={`hover:scale-105 duration-300 rounded-[20px] cursor-pointer !w-full`}
+          />
+
+          <Image
+            src={service?.photoURL[3]?.src}
+            width={service?.photoURL[3]?.width}
+            height={service?.photoURL[3]?.height}
+            alt='hero-image-1'
+            layout='fixed'
+            className={`hover:scale-105 duration-300 rounded-[20px] cursor-pointer !w-full`}
+          />
         </div>
       </div>
     </div>
